@@ -18,7 +18,7 @@
 # When setting this field to "incubator", please uncomment the
 # incubator_lesson_site, incubator_pre_survey, and incubator_post_survey
 # lines further down this file and add the URL to the relevant lesson site.
-carpentry: "dc"
+carpentry: "none"
 
 # This option is currently only needed for
 # Data Carpentry and Software Carpentry workshops.
@@ -41,7 +41,7 @@ curriculum: "dc-ecology"
 # value of the variable below ("flavor") to get the schedule and installation
 # instructions updated accordingly (valid values are 'r' or 'python').
 # Note: this is only for Data Carpentry and SWC at this time.
-flavor: "r"
+flavor: "FIXME"
 
 # If the workshop will be a lesson pilot (for a new official lesson or
 # a lesson in The Carpentries Incubator), set pilot to "true"
