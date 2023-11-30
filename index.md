@@ -426,14 +426,4 @@ These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
 
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
-{% endif %}
+{% if site.carpentry == "none" %} {% include swc/setup.html %} {% elsif site.carpentry == "dc" %} {% include dc/setup.html %} {% elsif site.carpentry == "lc" %} {% include lc/setup.html %} {% elsif site.carpentry == "incubator" %} Please check the "Setup" page of [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow to obtain the software and data you will need to follow the lesson. {% endif %}
