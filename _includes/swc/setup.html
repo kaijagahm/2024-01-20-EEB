@@ -1,28 +1,43 @@
-{% assign curricula = "swc-gapminder|swc-inflammation"  | split: "|" %}
-{% unless curricula contains site.curriculum %}
-{% include warning-curriculum.html %}
-{% endunless %}
-
-{% include install_instructions/shell.html %}
-{% include install_instructions/git.html %}
-{% include install_instructions/editor.html %}
-
-{% if site.flavor == "r" %}
-{% include install_instructions/r.html %}
-{% elsif site.flavor == "python" %}
-{% include install_instructions/python.html %}
-{% elsif site.flavor == "FIXME" %}
-{% include install_instructions/r.html %}
-{% include install_instructions/python.html %}
-{% else %}
-{% include warning-flavor.html %}
-{% endif %}
-
-{% comment %}
-The following setup instructions are commented out because Carpentries workshops
-cover the these topics less frequently. Please uncomment the lines that
-correspond to the topics covered in your workshop.
-
-{% include install_instructions/sql.html %}
-{% include install_instructions/openrefine.html %}
-{% endcomment %}
+<h3>Install the workshop software</h3>
+<table style="width:100%">
+  <tr>
+    <th>Date</th>
+    <th>Workshop</th>
+    <th>Setup Items</th>
+  </tr>
+  <tr>
+    <td>September 13</td>
+    <td>Unix Shell</td>
+    <td><a href = "https://swcarpentry.github.io/shell-novice/index.html">Setup Instructions</a></td>
+  </tr>
+  <tr>
+    <td>September 27-28</td>
+    <td>Intro to Machine Learning with Sklearn</td>
+    <td><a href = "https://carpentries-incubator.github.io/machine-learning-novice-sklearn/setup.html">Setup Instructions</a></td>
+  </tr>
+  <tr>
+    <td>October 11</td>
+    <td>Git/GitHub</td>
+    <td> <a href = "https://carpentries-incubator.github.io/git-novice-branch-pr/setup/">Setup Instructions</a></td>
+  </tr>
+  <tr>
+    <td>October 25-26</td>
+    <td>Intro to Docker</td>
+    <td><a href = "https://carpentries-incubator.github.io/docker-introduction/setup.html">Setup Instructions</a></td>
+  </tr>
+  <tr>
+    <td>November 8</td>
+    <td>CHTC</td>
+    <td><a>Setup Instructions</a></td>
+  </tr>
+  <tr>
+    <td>December 6</td>
+    <td>Interactive Data Visualizations in Python</td>
+    <td><a href = "https://carpentries-incubator.github.io/python-interactive-data-visualizations/setup.html">Setup Instructions</a></td>
+  </tr>
+  <tr>
+    <td>December 20</td>
+    <td>The Basics of Data Visualization</td>
+    <td><a href = "https://carpentries-incubator.github.io/intro-data-viz/#software-setup">Setup Instructions</a></td>
+  </tr>
+</table>
